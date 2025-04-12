@@ -83,7 +83,7 @@ TEST(ComplexOutputTest, WritesToOutputStream) {
     template_library::Complex c1(3.0, 4.0); 
     template_library::Complex c2(3.0, -4.0); 
     template_library::Complex c3(0.0, 0.0); 
-
+   
     std::ostringstream output1;
     output1 << c1;
     EXPECT_EQ(output1.str(), "3 + 4i");
